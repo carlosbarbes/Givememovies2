@@ -48,9 +48,9 @@ GiveMeMovies2 is an interactive web application that uses Natural Language Proce
   - [LinkedIn](www.linkedin.com/in/carlos-barcena-bescansa)
   - [GitHub](https://github.com/carlosbarbes)
 - Atai Ismaiilov
-  - [LinkedIn](https://www.linkedin.com/in/atai-ismailov)
-  - [GitHub](https://github.com/Atai-Ismaii)
+  - [LinkedIn](https://www.linkedin.com/in/atai-ismaiilov)
+  - [GitHub](https://github.com/ismaiilov-atai)
 
 - Pablo Flores (Original Creator)
-  - [LinkedIn](https://www.linkedin.com/in/pablo-flores)
-  - [GitHub](https://github.com/pabloflores)
+  - [LinkedIn](https://www.linkedin.com/in/pablo-flores-fernandez)
+  - [GitHub](https://github.com/flores5545)
