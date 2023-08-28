@@ -1,7 +1,4 @@
-const {movieFinderByID} = require('../APIs/TMDB');
-const {movieFinder} = require('../APIs/TMDB');
-
-//const prompt = "I want to watch a scifi movie with tom cruise which is less than 2 hours";
+const {movieFinderByID, movieFinder, insertWatchlist, retriveWatchlist} = require('../APIs/TMDB');
 
 async function getMovies(ctx) {
   try {
@@ -9,22 +6,43 @@ async function getMovies(ctx) {
     ctx.status = 200;
   } catch (err) {
     ctx.status = 500;
-    console.log(err);
+    ctx.body = err;
   }
 }
 
 
 async function getMoviesByID(ctx) {
   try {
-    console.log(ctx.request.body.id);
     ctx.body = await movieFinderByID(ctx.request.body.id)
-    console.log(ctx.body);
     ctx.status = 200;
   } catch (err) {
     ctx.status = 500;
-    console.log(err)
+    ctx.body = err;
+  }
+}
+
+async function postWatchlist(ctx) {
+  try {
+    ctx.body = await insertWatchlist(ctx.request.body.movie_id);
+    ctx.status = 200;
+  } catch (err) {
+    ctx.status = 500;
+    ctx.body = err;
+  }
+}
+
+async function getWatchlist(ctx) {
+  try {
+    ctx.body = await retriveWatchlist();
+    ctx.status = 200;
+  } catch (err) {
+    ctx.status = 500;
+    ctx.body = err;
   }
 }
 
 
-module.exports = {getMovies, getMoviesByID};
+
+
+
+module.exports = {getMovies, getMoviesByID, postWatchlist, getWatchlist};

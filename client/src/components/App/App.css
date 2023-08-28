@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: rgb(222, 222, 205);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 5px;
+  border-radius: 6px;
+  border: unset;
+}
+
+.btn:hover {
+  background-color: aliceblue;
+}
+.body {
+  background-color: rgb(222, 222, 205);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  padding: 10vh;
+}
+
+.summary {
+  margin: 0 auto;
+  font-size: 17px;
+  padding-bottom: 15vh;
+  width: 50vw;
+  text-align: justify;
+  line-height: 2;
+}
+
+.prompt {
+  border-radius: 15px;
+  resize: none;
+  padding: 10px;
+  overflow: hidden;
+  height: 10vh;
+  width: 50vw;
+  padding-bottom: 10vh;
+  text-align: center;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+}
